@@ -1,0 +1,132 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile Screen */
+/*Header*/
+#header {
+    background-color: #556270;
+    text-transform: uppercase;
+    height: var(--navbar-height);
+    user-select: none;
+}
+
+.nav-item {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item-link {
+    display: block;
+    text-decoration: none;
+    font-size: var(--font-size-nav-item);
+    color: #FFf;
+    line-height: 70px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* banner */
+#banner { 
+    padding: 64px 15px 0 15px;
+    user-select: none;
+}
+
+.banner__img {
+    display: none;
+}
+
+.banner__heading {
+    font-size: var(--font-size-heading);
+    font-weight: 560;
+    opacity: 0.8;
+}
+
+.banner__caption {
+    font-size: var(--font-size-text);
+    padding-top: 14px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #9c9a9a;
+    opacity: 0.6;
+}
+
+/* Content */
+.content {
+    background-color: #fff;
+    padding: 56px 15px 22px 15px;
+    user-select: none;
+}
+.place:last-child {
+    margin-top: var(--place-item-mt);
+}
+
+.place__heading {
+    font-size: var(--font-size-heading);
+    padding: 10px 0;
+    font-weight: 550;
+    opacity: 0.8;
+
+}
+
+.place__caption {
+    margin-top: 10px;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: var(--font-size-text);
+}
+
+.place__img.half {
+    height: var(--place-height-half);
+}
+
+.place__item + .place__item,
+.place__img.half + .place__img.half {
+    margin-top: var(--place-item-mt);
+}
+
+.place__img.full {
+    height: var(--place-height-full);
+}
+
+
+
+
+/* Footer */
+#footer {
+    background-color: #fff;
+    user-select: none;
+}
+
+.box {
+    padding: 0px 15px 50px;
+}
+
+.box__heading {
+    font-weight: 700;
+    font-size: var(--font-size-heading);
+    margin: 32px 0 15px 0;
+    opacity: 0.8;
+}
+
+.box__title {
+    line-height: 1.5;
+    opacity: 0.8;
+    font-weight: 420;
+    font-size: var(--font-size-text);
+}
+
+.box__link {
+    display: block;
+    color: #333;
+    opacity: 0.8;
+    margin: 20px 0;
+    font-weight: 450;
+    font-size: var(--font-size-text);
+}
